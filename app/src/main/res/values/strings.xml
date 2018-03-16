@@ -1,0 +1,18 @@
+<resources>
+    <!-- Application name -->
+    <string name="app_name">Tour Guide App</string>
+    <!-- Category name for outside -->
+    <string name="category_outside">Outside</string>
+    <!-- Category name for shopping -->
+    <string name="category_shopping">Shopping</string>
+    <!-- Category name for restaurants -->
+    <string name="category_restaurants">Restaurants</string>
+    <!-- Category name for culture -->
+    <string name="category_culture">Culture</string>
+    <!-- Category name for museums -->
+    <string name="category_museums">Museums</string>
+    <!-- Error Message in DetailsActivity -->
+    <string name="errorMessage">Can not display Details</string>
+    <!-- Image Content Description -->
+    <string name="imageContentDescription">Image</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application main colors -->
+    <color name="colorPrimary">#1a1a1a</color>
+    <color name="colorPrimaryDark">#0d0d0d</color>
+    <color name="colorAccent">#ff0000</color>
+    <!-- Fragments Background color -->
+    <color name="outsideColor">#009900</color>
+    <color name="shoppingColor">#ff80df</color>
+    <color name="restaurantsColor">#6699ff</color>
+    <color name="cultureColor">#cc6600</color>
+    <color name="museumsColor">#00b3b3</color>
+    <!-- Text color -->
+    <color name="primaryTextColor">#000000</color>
+    <!-- Background and Tabs colors -->
+    <color name="lightBackgroundColor">#f5f5f0</color>
+    <color name="backgroundColor">#999999</color>
+    <color name="tabColor">#262626</color>
+</resources>

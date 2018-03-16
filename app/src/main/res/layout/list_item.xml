@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_container"
+    >
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        tools:src="@mipmap/ic_botanische_garten"
+        android:id="@+id/icon_image_view"
+        android:contentDescription="@string/imageContentDescription"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/primaryTextStyle"
+            tools:text="Event Name"
+            android:id="@+id/event_name_view"
+            android:layout_marginBottom="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Event Address"
+            android:id="@+id/address_image_view"
+            />
+    </LinearLayout>
+</LinearLayout>
