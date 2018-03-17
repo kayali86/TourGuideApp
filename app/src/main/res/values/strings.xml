@@ -15,4 +15,410 @@
     <string name="errorMessage">Can not display Details</string>
     <!-- Image Content Description -->
     <string name="imageContentDescription">Image</string>
+
+    <!-- Strings in Culture Fragment -->
+    <!-- Event 1 -->
+    <string-array name="culture_event1">
+        <!-- Event Name -->
+        <item>KiZ (Kultur im Zentrum)</item>
+        <!-- Event Address -->
+        <item>Südanlage 3a\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Veranstaltungsort für Kunst und Kultur in der ehemaligen Stadtbibliothek (Südanlage 3a)\nDas KiZ befindet
+            sich im hinteren Bauteil der Kongresshalle (Südanlage 3a, Eingang über den Parkplatz Kongresshalle erreichbar).
+            Der Ausstellungs- und Veranstaltungsraum, der sich über zwei Etagen erstreckt, beherbergte früher die Stadtbibliothek
+            , bevor diese im Rathaus ihr neues Domizil fand.</item>
+    </string-array>
+
+    <!-- Event 2 -->
+    <string-array name="culture_event2">
+        <!-- Event Name -->
+        <item>Literarisches Zentrum Gießen</item>
+        <!-- Event Address -->
+        <item>Südanlage 3a\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Das Literarische Zentrum Gießen e.V. ist ein im November 2009 gegründeter Verein zur Pflege und Förderung der
+            literarischen Tradition und Kultur der Universitätsstadt Gießen und ihrer Region.\nGießen verfügt über eine
+            ausgeprägte literarische Infrastruktur: Neben literarischen Traditionen (begründet etwa von Nikolaus von Gießen,
+            Johann Balthasar Schupp(ius), Friedrich Maximilian Klinger, Georg Büchner, Alfred Bock oder Ernst Eckstein), die auf
+            vielfache Weise aktualisiert werden, besitzt Gießen ein breit gefächertes Angebot zur Gegenwartsliteratur.
+            Hier spielen auch engagierte Autoren aus der Region eine entscheidende Rolle.</item>
+    </string-array>
+
+    <!-- Event 3 -->
+    <string-array name="culture_event3">
+        <!-- Event Name -->
+        <item>Literatur in allen Facetten - das neue LZG-Programm ist da!</item>
+        <!-- Event Address -->
+        <item>Keine Adresse</item>
+        <!-- Event Description -->
+        <item>Das Programm des Literarischen Zentrums Gießen für das erste Quartal 2018\nDer Abend kommt von weit gegangen durch
+            den verschneiten, leisen Tann. Dann presst er seine Winterwangen an alle Fenster lauschend an.\nPassend zur
+            Jahreszeit begleiten die Worte von Rainer Maria Rilke die LZG-Termine von Januar bis März.</item>
+    </string-array>
+
+    <!-- Event 4 -->
+    <string-array name="culture_event4">
+        <!-- Event Name -->
+        <item>Osterzeit in den Gießener Kantoreien</item>
+        <!-- Event Address -->
+        <item>Johanneskirche und Petruskirche und St. Bonifatius</item>
+        <!-- Event Description -->
+        <item>Die drei KantorInnen der Gießener Kantoreien tragen mit der von ihnen gestalteten Kirchenmusik in Gießen nicht
+            unwesentlich zum kulturellen Angebot der Stadt bei.\nDas ganze Jahr über – besonders aber in der Oster- und
+            Weihnachtszeit – stellen die drei Kantoren ein hochkarätiges Programm zusammen.\nBereits ab Februar kann man
+            wieder musikalisch gestaltete Gottesdienste mit den Musikern und Chören der Kantoreien und Gästen und natürlich
+            die Passionskonzerte großer Komponisten besuchen.</item>
+    </string-array>
+
+    <!-- Event 5 -->
+    <string-array name="culture_event5">
+        <!-- Event Name -->
+        <item>Literarisches Zentrum Gießen</item>
+        <!-- Event Address -->
+        <item>Südanlage 3a\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Das Literarische Zentrum Gießen e.V. ist ein im November 2009 gegründeter Verein zur Pflege und Förderung der
+            literarischen Tradition und Kultur der Universitätsstadt Gießen und ihrer Region.\nGießen verfügt über eine
+            ausgeprägte literarische Infrastruktur: Neben literarischen Traditionen (begründet etwa von Nikolaus von Gießen,
+            Johann Balthasar Schupp(ius), Friedrich Maximilian Klinger, Georg Büchner, Alfred Bock oder Ernst Eckstein),
+            die auf vielfache Weise aktualisiert werden, besitzt Gießen ein breit gefächertes Angebot zur Gegenwartsliteratur.
+            Hier spielen auch engagierte Autoren aus der Region eine entscheidende Rolle.</item>
+    </string-array>
+
+    <!-- Event 6 -->
+    <string-array name="culture_event6">
+        <!-- Event Name -->
+        <item>KiZ (Kultur im Zentrum)</item>
+        <!-- Event Address -->
+        <item>Südanlage 3a\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Veranstaltungsort für Kunst und Kultur in der ehemaligen Stadtbibliothek (Südanlage 3a)\nDas KiZ befindet sich
+            im hinteren Bauteil der Kongresshalle (Südanlage 3a, Eingang über den Parkplatz Kongresshalle erreichbar).
+            Der Ausstellungs- und Veranstaltungsraum, der sich über zwei Etagen erstreckt, beherbergte früher
+            die Stadtbibliothek, bevor diese im Rathaus ihr neues Domizil fand.</item>
+    </string-array>
+
+    <!-- Strings in Museums Fragment -->
+    <!-- Event 1 -->
+    <string-array name="museums_event1">
+        <!-- Event Name -->
+        <item>Badenburg</item>
+        <!-- Event Address -->
+        <item>Inselweg 122\n35396 Gießen</item>
+        <!-- Event Description -->
+        <item>Badenburg\nEssen und Trinken wie die alten Ritter\nDie Badenburg liegt in idyllischer Lage an der Lahn.
+            Sie wurde um 1530 als Herrensitz erbaut. Bereits um 1760 nahm man den Schankbetrieb auf und schon damals galt
+            die Badenburg als beliebtes Ausflugsziel für Gießener Bürger und Studenten. Umstürzlerischen Kreisen diente
+            die Badenburg gar als konspirativer Treffpunkt.</item>
+    </string-array>
+
+    <!-- Event 2 -->
+    <string-array name="museums_event2">
+        <!-- Event Name -->
+        <item>Neuigkeiten aus dem Gießkannenmuseum</item>
+        <!-- Event Address -->
+        <item>Keine Adresse</item>
+        <!-- Event Description -->
+        <item>Öffentliche Führung am neuen Ort, Rückkehrer aus Österreich, neue Pflanzenlieferung von botanoadopt\nÖffentliche
+            Führung am neuen Ort, Rückkehrer aus Österreich, neue Pflanzenlieferung von botanoadopt\nÜber regen Zuspruch
+            freut sich das Team des Gießkannenmuseums seit Ende September: Die neue Bleibe des Museums bewährt sich als echter
+            Glücksgriff und die Besucherzahlen sind seit dem Umzug sprunghaft angestiegen. Insbesondere an Samstagen geben sich
+            Gießkannenfreunde in der Sonnenstraße die Klinke in die Hand. Aufgrund der regen Nachfrage bietet das GiKaMu nun
+            noch vor dem Jahreswechsel eine öffentliche Führung an.</item>
+    </string-array>
+
+    <!-- Event 3 -->
+    <string-array name="museums_event3">
+        <!-- Event Name -->
+        <item>Kloster Arnsburg</item>
+        <!-- Event Address -->
+        <item>Kloster Arnsburg\nLich</item>
+        <!-- Event Description -->
+        <item>Ein sehr bedeutendes Baudenkmal ist die Ruine des Zisterzienserklosters Arnsburg. Der eigentliche Gründer
+            des Zisterzienserordens Bernhard von Clairvaux begrüßt in Stein gehauen mit Buch und Krummstab in der Hand
+            die Besucher vom barocken Pfortenbau (1774_1777). Die Hinausziehenden segnet Maria mit Halbmond und Schlange.</item>
+    </string-array>
+
+    <!-- Event 4 -->
+    <string-array name="museums_event4">
+        <!-- Event Name -->
+        <item>Mathematikum</item>
+        <!-- Event Address -->
+        <item>Liebigstraße 8\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Das einzigartige Mathematik-Mitmachmuseum\nHier dürfen große und kleine Besucher selbst experimentieren.
+            Sie knobeln und puzzeln, sie bauen Brücken, experimentieren mit Seifenblasen und Spiegeln, erproben an sich
+            den Goldenen Schnitt… und haben vor allem eins: Spaß an der Mathematik!</item>
+    </string-array>
+
+    <!-- Event 5 -->
+    <string-array name="museums_event5">
+        <!-- Event Name -->
+        <item>Oberhessisches Museum - Wallenfels'sches Haus</item>
+        <!-- Event Address -->
+        <item>Kirchenplatz 6\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Das Oberhessische Museum ist auf drei historische Gebäude verteilt, die die jeweiligen Abteilungen bzw.
+            Sammlungen des Museums beherbergen:\n1. Altes Schloss\n2.  Leib’sches Haus\nAbteilung Gemäldegalerie und
+            Kunsthandwerk sowie Sitz der Verwaltung und Museumsleitung\nAbteilung für Stadtgeschichte und Volkskunde\n
+            (hinter dem Stadtkirchenturm, unmittelbar neben dem Wallenfels´schen Haus gelegen)</item>
+    </string-array>
+
+    <!-- Event 6 -->
+    <string-array name="museums_event6">
+        <!-- Event Name -->
+        <item>Badenburg</item>
+        <!-- Event Address -->
+        <item>Inselweg 122\n35396 Gießen</item>
+        <!-- Event Description -->
+        <item>Badenburg\nEssen und Trinken wie die alten Ritter\nDie Badenburg liegt in idyllischer Lage an der Lahn.
+            Sie wurde um 1530 als Herrensitz erbaut. Bereits um 1760 nahm man den Schankbetrieb auf und schon damals galt
+            die Badenburg als beliebtes Ausflugsziel für Gießener Bürger und Studenten. Umstürzlerischen Kreisen diente
+            die Badenburg gar als konspirativer Treffpunkt.</item>
+    </string-array>
+
+    <!-- Strings in Outside Fragment -->
+    <!-- Event 1 -->
+    <string-array name="outside_event1">
+        <!-- Event Name -->
+        <item>Der Botanische Garten in Gießen</item>
+        <!-- Event Address -->
+        <item>Sonnenstraße\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Der Botanische Garten der Justus-Liebig-Universität öffnet vom 17. März bis 20. Oktober für Besucher\nIm Herzen
+            der Gießener Bürgerinnen und Bürger hat der Botanische Garten einen besonderen Platz. Mitten in der Stadt gelegen,
+            bildet der knapp 4 ha große Garten mit seinen interessanten Pflanzen und den zahlreichen alten Bäumen
+            eine grüne Oase der Ruhe für Erholungssuchende in der Mittagspause und Spaziergänger.</item>
+    </string-array>
+
+    <!-- Event 2 -->
+    <string-array name="outside_event2">
+        <!-- Event Name -->
+        <item>Der Gießener Wochenmarkt</item>
+        <!-- Event Address -->
+        <item>Brandplatz\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Auf dem Gießener Wochenmarkt bieten rund 70 Händler und Selbsterzeuger an jedem Mittwoch und Samstag von
+            7.00 bis 14.00 Uhr ihre Produkte an, die durch Qualität und Frische überzeugen.</item>
+    </string-array>
+
+    <!-- Event 3 -->
+    <string-array name="outside_event3">
+        <!-- Event Name -->
+        <item>Lahnfenster Hessen - Ein Blick in den Fluss werfen</item>
+        <!-- Event Address -->
+        <item>Bootshausstraße 8\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Meteorologisch hat der Frühling bereits begonnen. Ob dies auch unter Wasser der Fall ist, lässt sich anhand
+            eines Blickes durch das Lahnfenster in Gießen feststellen. Denn dort schwimmen vor allem im Frühjahr Fische
+            auf der Wanderung zu ihren Laichgebieten an den großen Beobachtungsscheiben vorbei, wenn Sie das Wehr passieren wollen.
+            Ab und zu kann auch ein Schwarm Jungfische entdeckt werden, der im dort platzierten Totholz Unterschlupf sucht.</item>
+    </string-array>
+
+    <!-- Event 4 -->
+    <string-array name="outside_event4">
+        <!-- Event Name -->
+        <item>Marine-Verein Gießen e. V.</item>
+        <!-- Event Address -->
+        <item>Wißmarer Weg 31\n35396 Gießen</item>
+        <!-- Event Description -->
+        <item>Der Marine-Verein Gießen 1892 e.V.\nLust auf eine gemütliche Bootsfahrt auf der Lahn? Dann sind Sie beim
+            Marine-Verein genau richtig, denn hier können Sie mit den Ausflugsbooten eine Fahrt auf der Lahn genießen.
+            Die Boote des Marine-Vereins kann man zu verschiedenen Anlässen chartern und einen Ausflug auf der Lahn genießen.</item>
+    </string-array>
+
+    <!-- Event 5 -->
+    <string-array name="outside_event5">
+        <!-- Event Name -->
+        <item>Schlittschuhlaufen zu Studienzwecken</item>
+        <!-- Event Address -->
+        <item>Kischenplatz\nGießen</item>
+        <!-- Event Description -->
+        <item>JLU-Seminarteilnehmer üben Praxis mit Gießener Schülern auf der Eisbahn am Kirchenplatz\n„Rollen, gleiten,
+            fahren“ _ so heißt ein Seminar im Fachbereich 06 Sportwissenschaften der Justus-Liebig-Universität Gießen unter
+            der Leitung von Thorsten Bringmann. In dem Seminar lernen angehende Lehrkräfte – Gymnasiallehrer, Förderschullehrer,
+            aber auch Grundschullehrer – in unterschiedlichen Anwendungsfeldern Bewegungsübungen für Schulklassen zu entwickeln.
+            Die Theorie aus dem Seminar setzten Kursteilnehmer am Freitag auf der Eisbahn am Kirchenplatz nun in die Praxis um:
+            Für die Schüler der 9C der Gesamtschule Gießen-Ost hatten sich die Studierenden einen Übungsparcours überlegt,
+            um ihnen mehr Sicherheit auf dem Eis zu vermitteln.</item>
+    </string-array>
+
+    <!-- Event 6 -->
+    <string-array name="outside_event6">
+        <!-- Event Name -->
+        <item>Stadtpark Wieseckaue</item>
+        <!-- Event Address -->
+        <item>Ringallee\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Stadtpark Wieseckaue\nEin Park für alle, für Freizeit und Bewegung mitten in der Stadt – das ist die Grundidee
+            des Stadtpark Wieseckaue, Gießens größter Grünanlage. Im Stadtpark Wieseckaue finden alle zueinander und kommen
+            gemeinsam in Bewegung.</item>
+    </string-array>
+
+    <!-- Strings in Restaurants Fragment -->
+    <!-- Event 1 -->
+    <string-array name="restaurants_event1">
+        <!-- Event Name -->
+        <item>Bootshaus Restaurant und Biergarten</item>
+        <!-- Event Address -->
+        <item>Bootshausstr. 12\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Bootshaus Restaurant und Biergarten\n1877 als einfache Scheune von der Gießener Rudergesellschaft errichtet,
+            erstrahlt das Bootshaus heute als modernes Restaurant in bester Lage an der Lahn. Im Verlauf der Jahrzehnte
+            wechselte das Vereinsheim wiederholt sein Erscheinungsbild, bevor es 2006 dem heute zu sehenden Neubau wich.
+            Ein besonderes Merkmal ist der bis zu 500 Gästen Platz bietende Biergarten am Flussufer.</item>
+    </string-array>
+
+    <!-- Event 2 -->
+    <string-array name="restaurants_event2">
+        <!-- Event Name -->
+        <item>Dachcafé</item>
+        <!-- Event Address -->
+        <item>Ludwigsplatz 11\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>In Sachen Ausblick über Gießen und das Umland ist ganz klar das Dachcafé die unangefochtene Nummer 1
+            in der Stadt. Nicht nur durch die Panoramafenster in Restaurant und Lounge-Bar genießt man einen herrlichen
+            Ausblick über die Dächer der Stadt und das gesamte Umland. Eine Etage höher, auf der Sky-Bar,
+            weht einem zusätzlich noch die frische Luft um die Nase. In einer der zahlreichen Sitznischen kann man im Sommer
+            nicht nur die Köstlichkeiten aus der Dachcafé-Küche genießen, sondern auch einen der leckeren Cocktails schlürfen.</item>
+    </string-array>
+
+    <!-- Event 3 -->
+    <string-array name="restaurants_event3">
+        <!-- Event Name -->
+        <item>Lahngenuss im Ruderclub Hassia Gießen</item>
+        <!-- Event Address -->
+        <item>Uferweg 14\n35398 Gießen</item>
+        <!-- Event Description -->
+        <item>Lahngenuss im Ruderclub Hassia Gießen\nKenner wissen – das „Lahngenuss“ ist eine der besten Anlaufstellen,
+            wenn es um Fleischgerichte und Gebratenes geht. Denn kaum einer versteht dieses Handwerk so gut wie Chef Erwin
+            Schneider, der auch selber in der Küche steht. Und so erfreut sich das Lokal reger Beliebtheit – nicht nur bei
+            den Mitgliedern des Ruderclubs Hassia, in dem das Speiselokal beheimatet ist.</item>
+    </string-array>
+
+    <!-- Event 4 -->
+    <string-array name="restaurants_event4">
+        <!-- Event Name -->
+        <item>Restaurant Kloster Schiffenberg</item>
+        <!-- Event Address -->
+        <item>Domäne Schiffenberg\n35394 Gießen</item>
+        <!-- Event Description -->
+        <item>Der beste Platz in Gießen – Ganz oben auf dem Berg\nRund fünf Kilometer südlich der Gießener Innenstadt
+            erwartet Sie auf 281m Höhe ein gastlicher und geschichtsträchtiger Ort im Grünen, das Kloster Schiffenberg.
+            Simone Dembeck und André Hohe sind Ihre Gastgeber. In und um seine alten Mauern ist das Kloster nicht nur
+            ein Anziehungspunkt für alle geschichtlich Interessierten, sondern auch ein Freizeit- und Erholungsrevier
+            zu allen Jahreszeiten.</item>
+    </string-array>
+
+    <!-- Event 5 -->
+    <string-array name="restaurants_event5">
+        <!-- Event Name -->
+        <item>Strand Café an der Lahn</item>
+        <!-- Event Address -->
+        <item>Zu den Mühlen 2a\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Beach-Atmosphäre an der Lahn\nSeit kurzem hat die beliebte Strandbar Gießen eine kleine Schwester bekommen.
+            Direkt an der Lahn unterhalb der Sachsenhäuser Brücke und in fußläufiger Nähe zum Bahnhaltepunkt Oswaldsgarten
+            betreibt Christian Trageser mit seinem Team nun zusätzlich das Strand Café. Bei kühlen Getränken und kleinen
+            Speisen – die Karte ist an die der Strandbar angelehnt, bietet jedoch eine größere Eisauswahl und auch Kugeleis
+            – kann man direkt am Fluss in Beachatmosphäre Verweilen und in den gemütlichen Liegestühlen einfach einmal
+            die Seele baumeln lassen. Als Special werden leckere Flammkuchen gereicht.</item>
+    </string-array>
+
+    <!-- Event 6 -->
+    <string-array name="restaurants_event6">
+        <!-- Event Name -->
+        <item>Lahngenuss im Ruderclub Hassia Gießen</item>
+        <!-- Event Address -->
+        <item>Uferweg 14\n35398 Gießen</item>
+        <!-- Event Description -->
+        <item>Lahngenuss im Ruderclub Hassia Gießen\nKenner wissen – das „Lahngenuss“ ist eine der besten Anlaufstellen,
+            wenn es um Fleischgerichte und Gebratenes geht. Denn kaum einer versteht dieses Handwerk so gut wie Chef Erwin
+            Schneider, der auch selber in der Küche steht. Und so erfreut sich das Lokal reger Beliebtheit – nicht nur
+            bei den Mitgliedern des Ruderclubs Hassia, in dem das Speiselokal beheimatet ist.</item>
+    </string-array>
+
+    <!-- Strings in Shopping Fragment -->
+    <!-- Event 1 -->
+    <string-array name="shopping_event1">
+        <!-- Event Name -->
+        <item>BID Katharinenviertel e. V.</item>
+        <!-- Event Address -->
+        <item>Katharinenviertel\nGießen</item>
+        <!-- Event Description -->
+        <item>Willkommen im Katharinenviertel, der Bühne der Stadt und geselliger Treffpunkt – nicht zuletzt für
+            Familien!\nHier trifft sich die Familie: Im Katharinenviertel, dem Wohlfühlquartier mit überschaubarer Center-Struktur.
+            Neben der Angebotsvielfalt der Galaria Kaufhof finden sich in den feingliedrigen Verästelungen des City-Centers
+            und den Seitenstraßen niveauvolle Boutiquen, Parfümerien, Wohnaccesoires und viel, viel Entdeckenswertes.
+            In den vielen inhabergeführten Fachgeschäften werden Sie kompetent und freundlich beraten.
+            Service und Auswahl wird hier „groß“-geschrieben.</item>
+    </string-array>
+
+    <!-- Event 2 -->
+    <string-array name="shopping_event2">
+        <!-- Event Name -->
+        <item>BID Marktquartier</item>
+        <!-- Event Address -->
+        <item>Marktquartier\nGießen</item>
+        <!-- Event Description -->
+        <item>Marktquartier e.V. – Der Verein für das Herz Gießens\nWas macht das Marktquartier zu etwas ganz Besonderem?
+            Als his\u00ADtorischer Kern der Stadt kann das Viertel für sich in Anspruch nehmen, seit jeher die Wiege
+            des Gießener Einzelhandels zu sein. Die große Breite auch an ausgefallenen Angeboten und die persönliche Beratung
+            mit vielen Gelegenheiten für ein kleines Schwätzchen. Die Sicherheit, Servicequalität und das Qualitätsversprechen,
+            das ein\u00ADgesessene Unternehmen mit Gießener Wurzeln bieten können. Die Bequemlichkeit kurzer Wege im Quartier
+            sowie die Atmosphäre einer gewachsenen Stadtstruktur prägen diesen Ort für Entdeckungen, die sich über
+            die Kaskaden der Plätze bis in all ihre Verästelungen wiederfinden.</item>
+    </string-array>
+
+    <!-- Event 3 -->
+    <string-array name="shopping_event3">
+        <!-- Event Name -->
+        <item>BID Seltersweg</item>
+        <!-- Event Address -->
+        <item>Seltersweg\nGießen</item>
+        <!-- Event Description -->
+        <item>Der Seltersweg – Boulevard der Marken!\nWir heißen Sie herzlich Willkommen auf dem urbanen Laufsteg der Region.
+            Eingebettet in historische Fassaden flanieren täglich zahlreiche bummelnde Menschen durch Mittelhessens
+            Einkaufsmeile Nr.1.</item>
+    </string-array>
+
+    <!-- Event 4 -->
+    <string-array name="shopping_event4">
+        <!-- Event Name -->
+        <item>Galerie Neustädter Tor</item>
+        <!-- Event Address -->
+        <item>Neustadt 28\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Entdecken Sie einen bunten Mietermix: Ob Mode, Accessoires, Elektronik, Sport oder Gastronomie – hier bleiben
+            keine Wünsche offen. H und M, Müller, Reno, tegut, Media Markt, Intersport, Apollo Optik, Claire’s,
+            Jack und Jones, O2, Penny, Subway, Vero Moda und viele andere Mieter warten auf Ihren Besuch.</item>
+    </string-array>
+
+    <!-- Event 5 -->
+    <string-array name="shopping_event5">
+        <!-- Event Name -->
+        <item>Der Gießener Wochenmarkt</item>
+        <!-- Event Address -->
+        <item>Brandplatz\n35390 Gießen</item>
+        <!-- Event Description -->
+        <item>Auf dem Gießener Wochenmarkt bieten rund 70 Händler und Selbsterzeuger an jedem Mittwoch und Samstag
+            von 7.00 bis 14.00 Uhr ihre Produkte an, die durch Qualität und Frische überzeugen.</item>
+    </string-array>
+
+    <!-- Event 6 -->
+    <string-array name="shopping_event6">
+        <!-- Event Name -->
+        <item>BID Marktquartier</item>
+        <!-- Event Address -->
+        <item>Marktquartier\nGießen</item>
+        <!-- Event Description -->
+        <item>Marktquartier e.V. – Der Verein für das Herz Gießens\nWas macht das Marktquartier zu etwas ganz Besonderem?
+            Als his\u00ADtorischer Kern der Stadt kann das Viertel für sich in Anspruch nehmen, seit jeher die Wiege
+            des Gießener Einzelhandels zu sein. Die große Breite auch an ausgefallenen Angeboten und die persönliche Beratung
+            mit vielen Gelegenheiten für ein kleines Schwätzchen. Die Sicherheit, Servicequalität und das Qualitätsversprechen,
+            das ein\u00ADgesessene Unternehmen mit Gießener Wurzeln bieten können. Die Bequemlichkeit kurzer Wege im
+            Quartier sowie die Atmosphäre einer gewachsenen Stadtstruktur prägen diesen Ort für Entdeckungen,
+            die sich über die Kaskaden der Plätze bis in all ihre Verästelungen wiederfinden.</item>
+    </string-array>
 </resources>

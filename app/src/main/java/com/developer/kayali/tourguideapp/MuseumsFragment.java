@@ -11,47 +11,36 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class MuseumsFragment extends Fragment {
+    // Declare an ArrayList to store the Objects
+    ArrayList<Event> events;
+
     // Constructor
     public MuseumsFragment() {
         // Required empty public constructor
     }
+
     // When Fragment and View Created
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate a Root View
         View rootView = inflater.inflate(R.layout.events_list, container, false);
-        // Declare an ArrayList to store the Objects
-        final ArrayList<Event> events = new ArrayList<Event>();
+        // Initializing ArrayList
+        events = new ArrayList<Event>();
         // Adding Objects to ArrayList
         // Event 1
-        events.add(new Event(R.drawable.badenburg,R.mipmap.ic_badenburg, "Badenburg", "Inselweg 122\n" +
-                "35396 Gießen","Badenburg\n" +
-                "Essen und Trinken wie die alten Ritter\n" +
-                "Die Badenburg liegt in idyllischer Lage an der Lahn. Sie wurde um 1530 als Herrensitz erbaut. Bereits um 1760 nahm man den Schankbetrieb auf und schon damals galt die Badenburg als beliebtes Ausflugsziel für Gießener Bürger und Studenten. Umstürzlerischen Kreisen diente die Badenburg gar als konspirativer Treffpunkt."));
+        addEventInfo(R.drawable.badenburg, R.mipmap.ic_badenburg, R.array.museums_event1);
         // Event 2
-        events.add(new Event(R.drawable.giesskannenmuseum,R.mipmap.ic_giesskannenmuseum, "Neuigkeiten aus dem Gießkannenmuseum", "Keine Adresse","Öffentliche Führung am neuen Ort, Rückkehrer aus Österreich, neue Pflanzenlieferung von botanoadopt\n" +
-                "Über regen Zuspruch freut sich das Team des Gießkannenmuseums seit Ende September: Die neue Bleibe des Museums bewährt sich als echter Glücksgriff und die Besucherzahlen sind seit dem Umzug sprunghaft angestiegen. Insbesondere an Samstagen geben sich Gießkannenfreunde in der Sonnenstraße die Klinke in die Hand. Aufgrund der regen Nachfrage bietet das GiKaMu nun noch vor dem Jahreswechsel eine öffentliche Führung an."));
+        addEventInfo(R.drawable.giesskannenmuseum, R.mipmap.ic_giesskannenmuseum, R.array.museums_event2);
         // Event 3
-        events.add(new Event(R.drawable.kloster_arnsburg,R.mipmap.ic_kloster_arnsburg, "Kloster Arnsburg", "Kloster Arnsburg\n" +
-                "Lich","Ein sehr bedeutendes Baudenkmal ist die Ruine des Zisterzienserklosters Arnsburg. Der eigentliche Gründer des Zisterzienserordens Bernhard von Clairvaux begrüßt in Stein gehauen mit Buch und Krummstab in der Hand die Besucher vom barocken Pfortenbau (1774-1777). Die Hinausziehenden segnet Maria mit Halbmond und Schlange."));
+        addEventInfo(R.drawable.kloster_arnsburg, R.mipmap.ic_kloster_arnsburg, R.array.museums_event3);
         // Event 4
-        events.add(new Event(R.drawable.mathematikum,R.mipmap.ic_mathematikum, "Mathematikum", "Liebigstraße 8\n" +
-                "35390 Gießen","Das einzigartige Mathematik-Mitmachmuseum\n" +
-                "Hier dürfen große und kleine Besucher selbst experimentieren. Sie knobeln und puzzeln, sie bauen Brücken, experimentieren mit Seifenblasen und Spiegeln, erproben an sich den Goldenen Schnitt… und haben vor allem eins: Spaß an der Mathematik!"));
+        addEventInfo(R.drawable.mathematikum, R.mipmap.ic_mathematikum, R.array.museums_event4);
         // Event 5
-        events.add(new Event(R.drawable.oberhessisches_museum,R.mipmap.ic_oberhessisches_museum, "Oberhessisches Museum - Wallenfels'sches Haus", "Kirchenplatz 6\n" +
-                "35390 Gießen","Das Oberhessische Museum ist auf drei historische Gebäude verteilt, die die jeweiligen Abteilungen bzw. Sammlungen des Museums beherbergen:\n" +
-                "1. Altes Schloss\n" +
-                "Abteilung Gemäldegalerie und Kunsthandwerk sowie Sitz der Verwaltung und Museumsleitung\n" +
-                "2.  Leib’sches Haus\n" +
-                "Abteilung für Stadtgeschichte und Volkskunde\n" +
-                "(hinter dem Stadtkirchenturm, unmittelbar neben dem Wallenfels´schen Haus gelegen)"));
+        addEventInfo(R.drawable.oberhessisches_museum, R.mipmap.ic_oberhessisches_museum, R.array.museums_event5);
         // Event 6
-        events.add(new Event(R.drawable.badenburg,R.mipmap.ic_badenburg, "Badenburg", "Inselweg 122\n" +
-                "35396 Gießen","Badenburg\n" +
-                "Essen und Trinken wie die alten Ritter\n" +
-                "Die Badenburg liegt in idyllischer Lage an der Lahn. Sie wurde um 1530 als Herrensitz erbaut. Bereits um 1760 nahm man den Schankbetrieb auf und schon damals galt die Badenburg als beliebtes Ausflugsziel für Gießener Bürger und Studenten. Umstürzlerischen Kreisen diente die Badenburg gar als konspirativer Treffpunkt."));
+        addEventInfo(R.drawable.badenburg, R.mipmap.ic_badenburg, R.array.museums_event6);
+
         // Declare an Adapter
         EventAdapter adapter = new EventAdapter(getActivity(), events, R.color.museumsColor);
         // Initialize a ListView
@@ -74,4 +63,26 @@ public class MuseumsFragment extends Fragment {
         return rootView;
     }
 
+    /**
+     * get details of each Event from strings resource file according to tow parameters
+     *
+     * @param myStringResource Event ID (The name of String Array) in strings resource file
+     * @param i                Index of each String in this Strung Array (0= Event Name, 1= Event Address, 2= Event Description)
+     * @return
+     */
+    private String getMyString(int myStringResource, int i) {
+        String myString = getResources().getStringArray(myStringResource)[i];
+        return myString;
+    }
+
+    /**
+     * This Method is to add Event Details to events ArrayList according to three parameters
+     *
+     * @param eventImageID    Resource Id of Event Image
+     * @param eventIconID     Resource Id of Event Icon
+     * @param eventResourceID Resource Id of Event in strings resource file
+     */
+    private void addEventInfo(int eventImageID, int eventIconID, int eventResourceID) {
+        events.add(new Event(eventImageID, eventIconID, getMyString(eventResourceID, 0), getMyString(eventResourceID, 1), getMyString(eventResourceID, 2)));
+    }
 }

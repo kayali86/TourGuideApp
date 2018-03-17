@@ -17,16 +17,18 @@ import java.util.ArrayList;
 public class EventAdapter extends ArrayAdapter<Event> {
     // A variable to store background color
     private int backgroundColorId;
+
     // Constructor
     public EventAdapter(Activity context, ArrayList<Event> events, int backgroundColorId) {
-        super(context, 0,events);
+        super(context, 0, events);
         this.backgroundColorId = backgroundColorId;
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             // Inflate a view to use
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);

@@ -11,43 +11,35 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class CultureFragment extends Fragment {
+    // Declare an ArrayList to store the Objects
+    ArrayList<Event> events;
+
     // Constructor
     public CultureFragment() {
         // Required empty public constructor
     }
+
     // When Fragment and View Created
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate a Root View
         View rootView = inflater.inflate(R.layout.events_list, container, false);
-        // Declare an ArrayList to store the Objects
-        final ArrayList<Event> events = new ArrayList<Event>();
+        // Initializing ArrayList
+        events = new ArrayList<Event>();
         // Adding Objects to ArrayList
         // Event 1
-        events.add(new Event(R.drawable.kiz,R.mipmap.ic_kiz, "KiZ (Kultur im Zentrum)", "Südanlage 3a\n" +
-                "35390 Gießen","Veranstaltungsort für Kunst und Kultur in der ehemaligen Stadtbibliothek (Südanlage 3a)\n" +
-                "Das KiZ befindet sich im hinteren Bauteil der Kongresshalle (Südanlage 3a, Eingang über den Parkplatz Kongresshalle erreichbar). Der Ausstellungs- und Veranstaltungsraum, der sich über zwei Etagen erstreckt, beherbergte früher die Stadtbibliothek, bevor diese im Rathaus ihr neues Domizil fand."));
+        addEventInfo(R.drawable.kiz, R.mipmap.ic_kiz, R.array.culture_event1);
         // Event 2
-        events.add(new Event(R.drawable.literarisches_zentrum,R.mipmap.ic_literarisches_zentrum, "Literarisches Zentrum Gießen", "Südanlage 3a\n" +
-                "35390 Gießen","Das Literarische Zentrum Gießen e.V. ist ein im November 2009 gegründeter Verein zur Pflege und Förderung der literarischen Tradition und Kultur der Universitätsstadt Gießen und ihrer Region.\n" +
-                "Gießen verfügt über eine ausgeprägte literarische Infrastruktur: Neben literarischen Traditionen (begründet etwa von Nikolaus von Gießen, Johann Balthasar Schupp(ius), Friedrich Maximilian Klinger, Georg Büchner, Alfred Bock oder Ernst Eckstein), die auf vielfache Weise aktualisiert werden, besitzt Gießen ein breit gefächertes Angebot zur Gegenwartsliteratur. Hier spielen auch engagierte Autoren aus der Region eine entscheidende Rolle."));
+        addEventInfo(R.drawable.literarisches_zentrum, R.mipmap.ic_literarisches_zentrum, R.array.culture_event2);
         // Event 3
-        events.add(new Event(R.drawable.literatur,R.mipmap.ic_literatur, "Literatur in allen Facetten - das neue LZG-Programm ist da!", "Keine Adresse","Das Programm des Literarischen Zentrums Gießen für das erste Quartal 2018\n" +
-                "„Der Abend kommt von weit gegangen durch den verschneiten, leisen Tann. Dann presst er seine Winterwangen an alle Fenster lauschend an.“\n" +
-                "Passend zur Jahreszeit begleiten die Worte von Rainer Maria Rilke die LZG-Termine von Januar bis März."));
+        addEventInfo(R.drawable.literatur, R.mipmap.ic_literatur, R.array.culture_event3);
         // Event 4
-        events.add(new Event(R.drawable.osterzeit,R.mipmap.ic_osterzeit, "Osterzeit in den Gießener Kantoreien", "Johanneskirche & Petruskirche & St. Bonifatius","Die drei KantorInnen der Gießener Kantoreien tragen mit der von ihnen gestalteten Kirchenmusik in Gießen nicht unwesentlich zum kulturellen Angebot der Stadt bei.\n" +
-                "Das ganze Jahr über – besonders aber in der Oster- und Weihnachtszeit – stellen die drei Kantoren ein hochkarätiges Programm zusammen.\n" +
-                "Bereits ab Februar kann man wieder musikalisch gestaltete Gottesdienste mit den Musikern und Chören der Kantoreien und Gästen und natürlich die Passionskonzerte großer Komponisten besuchen."));
+        addEventInfo(R.drawable.osterzeit, R.mipmap.ic_osterzeit, R.array.culture_event4);
         // Event 5
-        events.add(new Event(R.drawable.literarisches_zentrum,R.mipmap.ic_literarisches_zentrum, "Literarisches Zentrum Gießen", "Südanlage 3a\n" +
-                "35390 Gießen","Das Literarische Zentrum Gießen e.V. ist ein im November 2009 gegründeter Verein zur Pflege und Förderung der literarischen Tradition und Kultur der Universitätsstadt Gießen und ihrer Region.\n" +
-                "Gießen verfügt über eine ausgeprägte literarische Infrastruktur: Neben literarischen Traditionen (begründet etwa von Nikolaus von Gießen, Johann Balthasar Schupp(ius), Friedrich Maximilian Klinger, Georg Büchner, Alfred Bock oder Ernst Eckstein), die auf vielfache Weise aktualisiert werden, besitzt Gießen ein breit gefächertes Angebot zur Gegenwartsliteratur. Hier spielen auch engagierte Autoren aus der Region eine entscheidende Rolle."));
+        addEventInfo(R.drawable.literarisches_zentrum, R.mipmap.ic_literarisches_zentrum, R.array.culture_event5);
         // Event 6
-        events.add(new Event(R.drawable.kiz,R.mipmap.ic_kiz, "KiZ (Kultur im Zentrum)", "Südanlage 3a\n" +
-                "35390 Gießen","Veranstaltungsort für Kunst und Kultur in der ehemaligen Stadtbibliothek (Südanlage 3a)\n" +
-                "Das KiZ befindet sich im hinteren Bauteil der Kongresshalle (Südanlage 3a, Eingang über den Parkplatz Kongresshalle erreichbar). Der Ausstellungs- und Veranstaltungsraum, der sich über zwei Etagen erstreckt, beherbergte früher die Stadtbibliothek, bevor diese im Rathaus ihr neues Domizil fand."));
+        addEventInfo(R.drawable.kiz, R.mipmap.ic_kiz, R.array.culture_event6);
         // Declare an Adapter
         EventAdapter adapter = new EventAdapter(getActivity(), events, R.color.cultureColor);
         // Initialize a ListView
@@ -66,7 +58,30 @@ public class CultureFragment extends Fragment {
                 intent.putExtra("eventDescription", currentWord.getDescription());
                 getActivity().startActivity(intent);
             }
-    });
+        });
         return rootView;
+    }
+
+    /**
+     * get details of each Event from strings resource file according to tow parameters
+     *
+     * @param myStringResource Event ID (The name of String Array) in strings resource file
+     * @param i                Index of each String in this Strung Array (0= Event Name, 1= Event Address, 2= Event Description)
+     * @return
+     */
+    private String getMyString(int myStringResource, int i) {
+        String myString = getResources().getStringArray(myStringResource)[i];
+        return myString;
+    }
+
+    /**
+     * This Method is to add Event Details to events ArrayList according to three parameters
+     *
+     * @param eventImageID    Resource Id of Event Image
+     * @param eventIconID     Resource Id of Event Icon
+     * @param eventResourceID Resource Id of Event in strings resource file
+     */
+    private void addEventInfo(int eventImageID, int eventIconID, int eventResourceID) {
+        events.add(new Event(eventImageID, eventIconID, getMyString(eventResourceID, 0), getMyString(eventResourceID, 1), getMyString(eventResourceID, 2)));
     }
 }

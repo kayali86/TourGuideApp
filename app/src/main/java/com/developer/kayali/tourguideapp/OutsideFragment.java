@@ -11,42 +11,36 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class OutsideFragment extends Fragment {
+    // Declare an ArrayList to store the Objects
+    ArrayList<Event> events;
+
     // Constructor
     public OutsideFragment() {
         // Required empty public constructor
     }
+
     // When Fragment and View Created
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate a Root View
         View rootView = inflater.inflate(R.layout.events_list, container, false);
-        // Declare an ArrayList to store the Objects
-        final ArrayList<Event> events = new ArrayList<Event>();
+        // Initializing ArrayList
+        events = new ArrayList<Event>();
         // Adding Objects to ArrayList
         // Event 1
-        events.add(new Event(R.drawable.botanische_garten, R.mipmap.ic_botanische_garten, "Der Botanische Garten in Gießen", "Sonnenstraße\n" +
-                "35390 Gießen","Der Botanische Garten der Justus-Liebig-Universität öffnet vom 17. März bis 20. Oktober für Besucher\n" +
-                "Im Herzen der Gießener Bürgerinnen und Bürger hat der Botanische Garten einen besonderen Platz. Mitten in der Stadt gelegen, bildet der knapp 4 ha große Garten mit seinen interessanten Pflanzen und den zahlreichen alten Bäumen eine grüne Oase der Ruhe für Erholungssuchende in der Mittagspause und Spaziergänger."));
+        addEventInfo(R.drawable.botanische_garten, R.mipmap.ic_botanische_garten, R.array.outside_event1);
         // Event 2
-        events.add(new Event(R.drawable.der_giessener_wochenmarkt,R.mipmap.ic_der_giessener_wochenmarkt, "Der Gießener Wochenmarkt", "Brandplatz\n" +
-                "35390 Gießen","Auf dem Gießener Wochenmarkt bieten rund 70 Händler und Selbsterzeuger an jedem Mittwoch und Samstag von 7.00 bis 14.00 Uhr ihre Produkte an, die durch Qualität und Frische überzeugen."));
+        addEventInfo(R.drawable.der_giessener_wochenmarkt, R.mipmap.ic_der_giessener_wochenmarkt, R.array.outside_event2);
         // Event 3
-        events.add(new Event(R.drawable.lahnfenster_hessen,R.mipmap.ic_lahnfenster_hessen, "Lahnfenster Hessen - Ein Blick in den Fluss werfen", "Bootshausstraße 8\n" +
-                "35390 Gießen","Meteorologisch hat der Frühling bereits begonnen. Ob dies auch unter Wasser der Fall ist, lässt sich anhand eines Blickes durch das Lahnfenster in Gießen feststellen. Denn dort schwimmen vor allem im Frühjahr Fische auf der Wanderung zu ihren Laichgebieten an den großen Beobachtungsscheiben vorbei, wenn Sie das Wehr passieren wollen. Ab und zu kann auch ein Schwarm Jungfische entdeckt werden, der im dort platzierten Totholz Unterschlupf sucht."));
+        addEventInfo(R.drawable.lahnfenster_hessen, R.mipmap.ic_lahnfenster_hessen, R.array.outside_event3);
         // Event 4
-        events.add(new Event(R.drawable.marine_verein_giessen,R.mipmap.ic_marine_verein_giessen, "Marine-Verein Gießen e. V.", "Wißmarer Weg 31\n" +
-                "35396 Gießen","Der Marine-Verein Gießen 1892 e.V.\n" +
-                "Lust auf eine gemütliche Bootsfahrt auf der Lahn? Dann sind Sie beim Marine-Verein genau richtig, denn hier können Sie mit den Ausflugsbooten eine Fahrt auf der Lahn genießen. Die Boote des Marine-Vereins kann man zu verschiedenen Anlässen chartern und einen Ausflug auf der Lahn genießen."));
+        addEventInfo(R.drawable.marine_verein_giessen, R.mipmap.ic_marine_verein_giessen, R.array.outside_event4);
         // Event 5
-        events.add(new Event(R.drawable.schlittschuhlaufe,R.mipmap.ic_schlittschuhlaufe, "Schlittschuhlaufen zu Studienzwecken", "Kischenplatz\n" +
-                "Gießen","JLU-Seminarteilnehmer üben Praxis mit Gießener Schülern auf der Eisbahn am Kirchenplatz\n" +
-                "\n" +
-                "„Rollen, gleiten, fahren“ – so heißt ein Seminar im Fachbereich 06 Sportwissenschaften der Justus-Liebig-Universität Gießen unter der Leitung von Thorsten Bringmann. In dem Seminar lernen angehende Lehrkräfte – Gymnasiallehrer, Förderschullehrer, aber auch Grundschullehrer – in unterschiedlichen Anwendungsfeldern Bewegungsübungen für Schulklassen zu entwickeln. Die Theorie aus dem Seminar setzten Kursteilnehmer am Freitag auf der Eisbahn am Kirchenplatz nun in die Praxis um: Für die Schüler der 9C der Gesamtschule Gießen-Ost hatten sich die Studierenden einen Übungsparcours überlegt, um ihnen mehr Sicherheit auf dem Eis zu vermitteln."));
+        addEventInfo(R.drawable.schlittschuhlaufe, R.mipmap.ic_schlittschuhlaufe, R.array.outside_event5);
         // Event 6
-        events.add(new Event(R.drawable.stadtpark_wieseckaue,R.mipmap.ic_stadtpark_wieseckaue, "Stadtpark Wieseckaue", "Ringallee\n" +
-                "35390 Gießen","Stadtpark Wieseckaue\n" +
-                "Ein Park für alle, für Freizeit und Bewegung mitten in der Stadt – das ist die Grundidee des Stadtpark Wieseckaue, Gießens größter Grünanlage. Im Stadtpark Wieseckaue finden alle zueinander und kommen gemeinsam in Bewegung."));
+        addEventInfo(R.drawable.stadtpark_wieseckaue, R.mipmap.ic_stadtpark_wieseckaue, R.array.outside_event6);
+
         // Declare an Adapter
         EventAdapter adapter = new EventAdapter(getActivity(), events, R.color.outsideColor);
         // Initialize a ListView
@@ -69,4 +63,26 @@ public class OutsideFragment extends Fragment {
         return rootView;
     }
 
+    /**
+     * get details of each Event from strings resource file according to tow parameters
+     *
+     * @param myStringResource Event ID (The name of String Array) in strings resource file
+     * @param i                Index of each String in this Strung Array (0= Event Name, 1= Event Address, 2= Event Description)
+     * @return
+     */
+    private String getMyString(int myStringResource, int i) {
+        String myString = getResources().getStringArray(myStringResource)[i];
+        return myString;
+    }
+
+    /**
+     * This Method is to add Event Details to events ArrayList according to three parameters
+     *
+     * @param eventImageID    Resource Id of Event Image
+     * @param eventIconID     Resource Id of Event Icon
+     * @param eventResourceID Resource Id of Event in strings resource file
+     */
+    private void addEventInfo(int eventImageID, int eventIconID, int eventResourceID) {
+        events.add(new Event(eventImageID, eventIconID, getMyString(eventResourceID, 0), getMyString(eventResourceID, 1), getMyString(eventResourceID, 2)));
+    }
 }

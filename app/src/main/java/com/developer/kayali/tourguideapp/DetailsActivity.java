@@ -26,7 +26,7 @@ public class DetailsActivity extends AppCompatActivity {
             description.setText(extras.getString("eventDescription"));
         } else {
             // When retrieving the extras from Intent failed
-            Toast.makeText(this,R.string.errorMessage, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.errorMessage, Toast.LENGTH_SHORT).show();
         }
     }
 }
