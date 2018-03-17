@@ -67,7 +67,7 @@ public class CultureFragment extends Fragment {
      *
      * @param myStringResource Event ID (The name of String Array) in strings resource file
      * @param i                Index of each String in this Strung Array (0= Event Name, 1= Event Address, 2= Event Description)
-     * @return
+     * @return Return Event Name, address, description from strings resource file to store in events ArrayList
      */
     private String getMyString(int myStringResource, int i) {
         String myString = getResources().getStringArray(myStringResource)[i];
